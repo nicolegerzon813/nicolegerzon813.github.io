@@ -149,86 +149,81 @@ main > h2:first-child {
     text-decoration: underline;
 }
 
-/* Publications */
-.year-section {
-    margin-bottom: 2.5rem;
+/* Publications - Bar-separated layout */
+.publication-list {
+    margin-top: 1.5rem;
 }
 
-.year-header {
-    color: #2c3e50;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-    border: none;
-    padding: 0;
-}
-
-.pub-entry {
+.pub-item {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #eee;
 }
 
-.pub-entry:last-child {
+.pub-item:last-child {
     border-bottom: none;
 }
 
-.venue-tag {
-    display: inline-block;
-    background-color: #3498db;
-    color: white;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
+.pub-year {
     font-weight: 600;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    white-space: nowrap;
+    padding-right: 0.5rem;
 }
 
-.award-tag {
-    display: inline-block;
-    background-color: #e74c3c;
-    color: white;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+.pub-separator {
+    color: #999;
+    padding: 0 0.5rem;
+    white-space: nowrap;
 }
 
-.pub-citation {
-    color: #333;
+.pub-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex: 1;
+}
+
+.pub-venue {
+    font-weight: 600;
+    color: #3498db;
+    white-space: nowrap;
+    padding-right: 0.5rem;
+}
+
+.pub-award {
+    font-weight: 600;
+    color: #e74c3c;
+    white-space: nowrap;
+    padding-right: 0.5rem;
+}
+
+.pub-text {
+    flex: 1;
     line-height: 1.6;
-    margin-bottom: 0.5rem;
+    min-width: 300px;
 }
 
-.pub-citation strong {
+.pub-text strong {
     font-weight: 600;
 }
 
-.pub-links {
-    margin-top: 0.5rem;
+.pub-links-inline {
+    display: flex;
+    gap: 0;
+    white-space: nowrap;
 }
 
-.pub-links a {
-    display: inline-block;
+.pub-links-inline a {
     color: #3498db;
     text-decoration: none;
-    margin-right: 1rem;
-    font-size: 0.95rem;
+    padding: 0 0.5rem;
 }
 
-.pub-links a:hover {
+.pub-links-inline a:hover {
     text-decoration: underline;
-}
-
-.pub-links a:before {
-    content: "[";
-}
-
-.pub-links a:after {
-    content: "]";
 }
 
 /* Misc Page */
@@ -297,5 +292,17 @@ footer {
     .profile-photo {
         width: 150px;
         height: 150px;
+    }
+
+    .pub-item {
+        flex-direction: column;
+    }
+
+    .pub-year {
+        padding-bottom: 0.5rem;
+    }
+
+    .pub-content {
+        margin-left: 0;
     }
 }
