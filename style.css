@@ -73,7 +73,7 @@ h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #BDB246;
 }
 
 main > h2:first-child {
@@ -121,12 +121,12 @@ main > h2:first-child {
 .news-item {
     margin-bottom: 1rem;
     padding-left: 1rem;
-    border-left: 3px solid #3498db;
+    border-left: 3px solid #4D6A6D;
 }
 
 .news-date {
     font-weight: 600;
-    color: #3498db;
+    color: #4D6A6D;
     display: inline-block;
     min-width: 80px;
 }
@@ -142,7 +142,7 @@ main > h2:first-child {
 }
 
 .contact a {
-    color: #3498db;
+    color: #4D6A6D;
     text-decoration: none;
 }
 
