@@ -1,0 +1,263 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+nav a.active {
+    background-color: #3498db;
+}
+
+/* Main Content */
+main {
+    background-color: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+}
+
+main > h2:first-child {
+    margin-top: 0;
+}
+
+/* Profile Section */
+.hero {
+    margin-bottom: 2rem;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+}
+
+.profile-text h2 {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.profile-text p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* About Section */
+.about p {
+    margin-bottom: 1rem;
+}
+
+/* News Section */
+.news-item {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid #3498db;
+}
+
+.news-date {
+    font-weight: 600;
+    color: #3498db;
+    display: inline-block;
+    min-width: 80px;
+}
+
+.news-item p {
+    display: inline;
+    margin: 0;
+}
+
+/* Contact Section */
+.contact p {
+    margin-bottom: 0.5rem;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Publications */
+.publication {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.publication:last-child {
+    border-bottom: none;
+}
+
+.publication h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.authors {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.venue {
+    color: #3498db;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    margin-bottom: 0.5rem;
+}
+
+.links a {
+    color: #3498db;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Misc Page */
+.misc-section {
+    margin-bottom: 2rem;
+}
+
+.misc-section h3 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.misc-section ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.misc-section ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.misc-section ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.misc-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.misc-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
