@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #34495e;
+    background-color: #682025;
 }
 
 nav a.active {
@@ -189,14 +189,14 @@ main > h2:first-child {
 
 .pub-venue {
     font-weight: 600;
-    color: #3498db;
+    color: #4D6A6D;
     white-space: nowrap;
     padding-right: 0.5rem;
 }
 
 .pub-award {
     font-weight: 600;
-    color: #e74c3c;
+    color: #C78283;
     white-space: nowrap;
     padding-right: 0.5rem;
 }
@@ -218,7 +218,7 @@ main > h2:first-child {
 }
 
 .pub-links-inline a {
-    color: #3498db;
+    color: #4D6A6D;
     text-decoration: none;
     padding: 0 0.5rem;
 }
