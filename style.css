@@ -150,47 +150,85 @@ main > h2:first-child {
 }
 
 /* Publications */
-.publication {
+.year-section {
+    margin-bottom: 2.5rem;
+}
+
+.year-header {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    border: none;
+    padding: 0;
+}
+
+.pub-entry {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #eee;
 }
 
-.publication:last-child {
+.pub-entry:last-child {
     border-bottom: none;
 }
 
-.publication h3 {
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.authors {
-    color: #666;
-    font-size: 0.95rem;
-    margin-bottom: 0.3rem;
-}
-
-.venue {
-    color: #3498db;
-    font-style: italic;
-    font-size: 0.9rem;
+.venue-tag {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.description {
+.award-tag {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
-.links a {
+.pub-citation {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.pub-citation strong {
+    font-weight: 600;
+}
+
+.pub-links {
+    margin-top: 0.5rem;
+}
+
+.pub-links a {
+    display: inline-block;
     color: #3498db;
     text-decoration: none;
     margin-right: 1rem;
+    font-size: 0.95rem;
 }
 
-.links a:hover {
+.pub-links a:hover {
     text-decoration: underline;
+}
+
+.pub-links a:before {
+    content: "[";
+}
+
+.pub-links a:after {
+    content: "]";
 }
 
 /* Misc Page */
